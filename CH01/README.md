@@ -221,12 +221,3 @@ Classification, Tagging, Regression
 - 图1.4和图1.5除了分类系统和标注系统的差异外，没看到其他差异，但实际上这两幅图中对应的输入数据有差异，序列数据的$x_i = (x_i^{(1)},x_i^{(2)},\dots,x_i^{(n)})^T$对应了
 - 图1.5和图1.6，回归问题的产出为$Y=\hat f(X)$
 
-## 参考
-
-参考文献都是大部头，ESL，PRML在列
-
-1. [^1]: [ESL:7.10.1:K-Forld Cross Validation](##参考)
-
-2. [^2 ]: [NNDL](https://github.com/nndl/nndl.github.io/blob/master/chap-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E6%A6%82%E8%BF%B0.pdf)
-
-**[⬆ top](#导读)**
