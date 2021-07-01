@@ -44,7 +44,7 @@
 
 - 后面插点从深度学习角度拿到的点
 
-    - 关于机器学习三要素, 复旦大学邱锡鹏教授也有解读[^2]: 模型, 学习准则, 优化算法. 这个定义比较接近代码. 以Tensorflow为例. 通常会定义一个网络(模型), 定义Loss(学习准则), 定义优化算法(Optimizer), 然后开Session, 不停的把数据带入用Opitmizer去最小化Loss.
+    - 关于机器学习三要素, 复旦大学邱锡鹏教授也有解读[^2]: 模型, 学习准则, 优化算法. 这个定义比较接近代码. 以Tensorflow为例. 通常会定义一个网络(模型), 定义Loss(学习准则), 定义优化算法(Optimizer), 然后开Session, 不停的把数据带入用Optimizer去最小化Loss.
     - Losses, Metrics, 在Keras里面划分了两个模块, 解释是Losses是BP过程用到的, 而Metrics实际和损失函数类似, 用来评价模型的性能, 但是不参与反向传播. 从源码也能看到, Metrics里面import了很多Loss算法
 
 - 书中例子1.1可以参考PRML中对应的表述， 更详细些。
@@ -152,11 +152,11 @@ $L(Y,P(Y|X))$
 
 **模型**为
 
-$f_M(x,w)=w_0+w_1x+w_2x^2+\cdots+w_Mx^M=\sum\limits_{j=0}^Mw_jx^j​$
+$f_M(x,w)=w_0+w_1x+w_2x^2+\cdots+w_Mx^M=\sum\limits_{j=0}^Mw_jx^j$
 
 经验风险最小化策略下
 
-$L(w)=\frac{1}{2}\sum\limits_{i=1}^N(f(x_i,w)-y_i)^2​$
+$L(w)=\frac{1}{2}\sum\limits_{i=1}^N(f(x_i,w)-y_i)^2$
 
 将模型和训练数据带入到上式得到
 
